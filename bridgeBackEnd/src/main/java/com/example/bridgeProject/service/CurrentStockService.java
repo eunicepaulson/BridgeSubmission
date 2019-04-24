@@ -165,7 +165,6 @@ public class CurrentStockService {
 				if (flag) {
 					// Add the stock to the list for displaying
 					String symbol = NSE.getString("symbol");
-					System.out.println(symbol);
 					symbol = symbol.substring(0, symbol.lastIndexOf('.'));
 					String name = NSE.getString("longName");
 					NSEPrice = Math.round(NSEPrice * 100.0) / 100.0;
